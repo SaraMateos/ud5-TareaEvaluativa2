@@ -15,6 +15,7 @@
 			<table class="table table-responsive">
 			     <tr class="table-dark">
 			     	<th scope="col">#</th>
+			     	<th scope="col">Médico</th>
 			      	<th scope="col">Paciente</th>
 			     	<th scope="col">Fecha</th>
 			      	<th scope="col">Informe/Diagnostico</th>
@@ -22,6 +23,7 @@
 			    </tr>
 			    <tr th:each="cita : ${citas}">
 			    	<td scope="row" th:text="${cita.id}"></td>
+			    	<td scope="row" th:text="${cita.medico.nombre}"></td>
 			        <td scope="row" th:text="${cita.paciente}"></td>
 			        <td scope="row" th:text="${cita.fecha}"></td>
 			        <td scope="row" th:text="${cita.informe}"></td>
